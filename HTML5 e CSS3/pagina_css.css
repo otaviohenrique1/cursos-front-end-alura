@@ -1,0 +1,174 @@
+html{
+	font-size:120%;
+}
+
+/*Titulo principal da pagina h1*/
+.titulo-pagina{
+	font-size: 300%;
+	background-color:#851944;
+	color: #F2FFFC;
+	text-align:center;
+	font-family:"Arial", "Times New Roman", sans-serif;
+	padding:2rem;
+	margin:0px;
+	border-bottom:0.5rem solid black;
+	text-transform:uppercase;/*Titulo em maiusculo*/
+}
+
+h1{
+	text-shadow: 5px 5px #000;
+}
+
+/*Titulos e subtitulos h2*/
+.subtitulo{
+	margin-top:60px;
+	margin-bottom:30px;
+	font-size:40px;
+	font-family:"Arial", "Times New Roman", sans-serif;
+	clear:both;/*Tira os componentes dos lado do h2, eles ficam abaixo*/
+}
+
+/*Pagina inteira*/
+body{
+	font-family:"Times New Roman", serif;
+	background-color:#F2FFFC;
+	/*font-size:220%;*/
+	line-height:1.5;
+	/*margin:20px 0;*/
+	margin:0px;
+}
+
+/*Conteudo da pagina*/
+/*main div*/
+.container{
+    margin:0 auto;
+	width: 840px;
+    margin: auto;
+	padding: 40px 0;
+	padding-bottom:80px.
+}
+
+/*Paragrafos*/
+p{
+	text-align:justify;
+	margin:20px 0;
+}
+
+strong{
+	font-weight:bold;
+}
+
+em{
+	font-style: italic;
+}
+
+/*Lista do menu*/
+main a{
+	color: #851944;
+}
+
+ul {
+    color: pink;
+}
+
+ul li a {
+    color: inherit;
+}
+
+aside{
+	background-color:#3C1D3D;
+	color:#F2FFFC;
+	padding:20px;
+	text-align:center;
+}
+
+aside a {
+    color: inherit;
+    font-family: "Open Sans Condensed", sans-serif;
+}
+
+aside h1{
+	font-size:30px;
+	margin-bottom: 25px;
+}
+
+.icones-sociais li{
+	display: inline-block;
+}
+
+.icones-sociais a{
+	width:40px;
+	height:40px;
+	display:inline-block;
+	text-indent:-9999px;
+}
+
+.github{
+	background-image:url(img/github.png);
+}
+
+.twitter{
+	background-image:url(img/twitter.png);
+}
+
+.linkedin{
+	background-image:url(img/linkedin.png);
+}
+
+nav a{
+	color:#F2FFFC;
+	text-transform: lowercase;/*Menu com letra minuscula*/
+}
+
+/*Posicionamento na pagina dos componentes*/
+/*aside*/
+.navegacao-menu{
+	clear:right;
+	width:15%;
+	/*box-sizing:border-box;*/
+	position:relative;
+	top:300px;
+}
+
+/*aside, img*/
+.navegacao-menu, .foto-imagem{
+	float:right;/*Posição*/
+	box-sizing:border-box;
+	border-left: 10px solid black;
+	border-bottom: 10px solid black;
+}
+
+main{
+	float:left;
+	width:calc(100% - 0.9 * 300px);
+	padding-bottom: 80px;
+}
+
+.foto-imagem{
+	width:300px;
+	position:absolute;
+	/*Posição na tela*/
+	top:0;
+	right:0;
+}
+
+.navegacao-site {
+    width: calc(0.9 * 300px);
+}
+
+main {
+    width: calc(100% - 0.9 * 300px);
+}
+
+/*Rodape da pagina*/
+.rodape{
+	background-color:rgba(0,0,0,0.3);
+	color:#000;
+	padding:20px;
+	clear:both;
+	position:fixed;
+	bottom:0;
+	left:0;
+	width:100%;
+	box-sizing:border-box;
+}

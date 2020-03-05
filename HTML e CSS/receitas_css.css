@@ -1,0 +1,121 @@
+body{
+	background-color:#F5F0DC;/*Cor de fundo do componente*/
+	font-family:Helvetica, Arial, sans-serif;/*Fonte do componente*/
+	width:1100px;/*Largura do componente*/
+	margin-right:auto;
+	margin-left:auto;
+}
+
+#titulo{
+	text-align:center;
+}
+
+#banner{
+	top:0;/*Posição na pagina: Distancia do topo da margem*/
+	right:0;/*Posição na pagina: Distancia da direita da margem*/
+	/*Posição na tela*/
+	position:fixed;/*Fixa o componente na tela*/
+	/*position:absolute;*/
+}
+
+nav{
+	float:left;/*Ordem do com na tela*/
+	width:200px
+}
+
+#conteudo{
+	float:right;
+	width:900px;
+}
+
+nav ul li{
+	/*display:inline;
+	margin-right:50px;*/
+	/*display:inline Exibe os componentes em linha*/
+	background-color:#C7BE9B;
+	margin-bottom:3px;/*Margem entre os componentes*/
+}
+
+nav ul li a{
+	text-decoration:none;/*Tira o efeito de sublinhado do link co componente*/
+	color:black;
+}
+
+nav ul{
+	list-style:none;/*Tira o circulo que marca cada item da lista*/
+	padding-left:0;/*Tira margem do componente*/
+}
+
+nav ul li:hover {
+	/*Muda a cor dos componentes do 
+	menu quando o mouse passa por cima*/
+	background-color:#9C8F67;
+}
+
+h2{
+	/*width:900px;*/
+	background-color:#B3A742;
+	background:-moz-linear-gradient(top, #9C8F67, #C7BE9B 30%);/*degrade(sequencia de cores) do componente (No Firefox)*/
+	background:-webkit-linear-gradient(top, #9C8F67, #C7BE9B 30%);/*degrade(sequencia de cores) do componente (No Chrome)*/
+	background:-o-linear-gradient(top, #9C8F67, #C7BE9B 30%);/*degrade(sequencia de cores) do componente (No Opera)*/
+	background:-ms-linear-gradient(top, #9C8F67, #C7BE9B 30%);/*degrade(sequencia de cores) do componente (No IE 10)*/
+	border-radius:15px;/*Borda curva*/
+	border: 1px solid black;
+	padding-top:5px;
+	padding-left:5px;
+	padding-bottom:5px;
+	padding-right:5px;
+	color:#000000;
+}
+
+figure{
+	background-color:white;
+	width:230px;
+	text-align:center;
+	padding:15px;/*margem interna do componente*/
+	font-family:'Comic Sans MS', cursive;
+	border: 1px solid black;
+	box-shadow:5px 5px 3px rgba(0,0,0,0.7);
+	/*Sombra do componente box-shadow (Tamanho da sombra horizontal, 
+	Tamanho da sombra vertical, Tamanho do efeito blur) cor: rgba()*/
+	-moz-transform:rotate(-5deg);/*Transformação, rotacão da imagem (No Firefox)*/
+	-webkit-transform:rotate(-5deg);/*Transformação, rotacão da imagem (No Chrome)*/
+	-o-transform:rotate(-5deg);/*Transformação, rotacão da imagem (No Opera)*/
+	-ms-transform:rotate(-5deg);/*Transformação, rotacão da imagem (No IE 10)*/
+}
+
+/*
+figure:hover{
+    -moz-transform:rotate(-5deg);
+	-webkit-transform:rotate(-5deg);
+	-o-transform:rotate(-5deg);
+	-ms-transform:rotate(-5deg);
+}
+*/
+
+#td-nutrientes{
+	width:40%;
+	margin-right:auto;
+	margin-left:auto;
+	border:1px solid black;/*Borda do componente*/
+}
+
+/*Aplica o estilo a um componente 
+especifico de uma determinada tabela*/
+td-nutrientes th{
+	background-color:#FFFFFF;
+}
+
+/*Aplica estilo nas linhas impares da tabela*/
+#td-nutrientes tr:nth-child(odd){
+	background-color:#FFFFFF;
+}
+
+/*Aplica estilo nas linhas pares da tabela*/
+#td-nutrientes tr:nth-child(even){
+	background-color:#F8EAB3;
+}
+
+#topo{
+	text-align:center;
+}

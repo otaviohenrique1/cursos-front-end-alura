@@ -1,0 +1,139 @@
+/*Parte desktop*/
+.cabecalhoPrincipal .container{
+	display:flex;/*Alinha os itens*/
+	align-items:center;/*Alinha os itens no centro*/
+	justify-content: space-between;/*Coloca espaço entre os itens, distribue espaço*/
+}
+
+.cabecalhoPrincipal-nav{
+	display:flex;
+}
+
+.rodapePrincipal-patrocinadores .container{
+	display:flex;
+	justify-content:space-between;
+}
+
+.rodapePrincipal-patrocinadores-list{
+	display:flex;
+	align-items:center;
+	justify-content:space-around;/*Distribue o espaço ao redor dos itens*/
+	width:70%;
+	margin-right:5%;
+}
+
+.rodapePrincipal-contatoForm{
+	width:25%;
+}
+
+.rodapePrincipal-contatoForm-fieldset{
+	display:flex;
+}
+
+.rodapePrincipal-navMap-list{
+	display:flex;
+	/*flex-direction:row;*//*Direção do flex, row Deixa um item do lado do outro, na horizontal, em linha*/
+	/*flex-direction:column;/*Direção do flex, column, Deixa um item abaixo do outro, na vertical, em coluna*/
+	/*flex-wrap:wrap;/*Se a coluna com os itens não coube no container, quebra a coluna e coloca ao lado*/
+	flex-flow:column wrap;/*Atalho para o flex-direction:column; e o flex-wrap:wrap;*/
+	height:280px;
+}
+
+.conteudoPrincipal-cursos{
+	display:flex;
+	flex-wrap:wrap;
+	/*justify-content: flex-start;*//*Coloca os itens na da esquerda da pagina*/
+	/*justify-content: flex-end;*//*Coloca os itens na direita da pagina*/
+	/*justify-content: center;*//*Coloca os itens no centro da pagina*/
+}
+
+.conteudoPrincipal-cursos-link{
+	width:23%;
+	margin:1%;
+}
+
+/*O quarto item de cada linha nao tem margem a direita*/
+.conteudoPrincipal-cursos-link:nth-child(4n){
+	margin-right:0;
+}
+
+/*O primeiro item de cada linha nao tem margem a esquerda*/
+.conteudoPrincipal-cursos-link:nth-child(4n+1){
+	margin-left:0;
+}
+
+.videoSobre .container{
+	display:flex;
+}
+
+.videoSobre-sobre{
+	text-align:center;
+	display:flex;
+	flex-direction:column;
+	flex-grow:2;
+}
+
+.videoSobre-sobre-list{
+	flex-grow:1;
+}
+
+.videoSobre-video{
+	flex-grow:1;
+	flex-shrink:2;
+}
+
+/*Parte mobile*/
+@media(max-width:768px){
+	.cabecalhoPrincipal-nav{
+		flex-direction:column;
+	}
+
+	.cabecalhoPrincipal .container{
+		flex-direction:column;
+		align-items:initial;
+		text-align:center;
+	}
+
+	.conteudoPrincipal-cursos{
+		/*flex-wrap:nowrap;*//*Não quebra linha*/
+		flex-direction:column;
+	}
+
+	.conteudoPrincipal-cursos-link{
+		width:100%;
+	}
+
+	.rodapePrincipal-navMap-list{
+		height:auto;
+	}
+
+	.rodapePrincipal-patrocinadores .container{
+		flex-direction:column;
+		align-items:center;
+	}
+
+	.rodapePrincipal-patrocinadores-list{
+		margin:0;
+		width:100%;
+	}
+
+	.rodapePrincipal-contatoForm{
+		width:100%;
+	}
+
+	.rodapePrincipal-contatoForm-fieldset{
+		justify-content:center;
+	}
+	
+	.cabecalhoPrincipal-nav-link-app{
+		order:-1;/*Muda a ordem de exibição no menu, o ultimo item vai para a primeira posição*/
+	}
+	
+	.videoSobre .container{
+		flex-direction:column;
+	}
+	
+	.videoSobre-video {
+		margin: 0 auto;
+	}
+}
